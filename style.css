@@ -115,7 +115,6 @@ p {
   visibility: visible;
 }
 .social {
-  cursor: pointer;
   position: absolute;
   top: -85px;
   right: -110px;
@@ -143,7 +142,13 @@ p {
   color: #9daec2;
   letter-spacing: 5px;
 }
-
+.sns {
+  cursor: pointer;
+}
+.sns:hover {
+  font-weight: bold;
+  transform: scale(110%);
+}
 footer {
   position: absolute;
   bottom: 1px;
