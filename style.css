@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  position: relative;
+  background-color: #f2f2f2;
+  font-family: "Manrope", sans-serif;
+}
+main {
+  margin: 0 auto;
+  width: 730px;
+  height: 230px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.drawers {
+  width: 30%;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.info {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 30px 20px;
+}
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #48556a;
+}
+p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}
+.detail {
+  color: #6e8098;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.author-name {
+  display: flex;
+}
+.michelle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.name-date {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  font-weight: 700;
+  color: #48556a;
+}
+.date {
+  font-weight: 500;
+  color: #9daec2;
+}
+
+.share {
+  position: relative;
+  margin: 0 20px;
+}
+.share-logo {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ecf2f8;
+  border: none;
+  box-shadow: 1px 3px 4px -1px #888888;
+  color: #48556a;
+}
+.logo {
+  padding: 10px;
+}
+.share-logo:hover,
+.share-logo:active {
+  background-color: #48556a;
+  color: #ecf2f8;
+}
+.share-logo:active {
+  transform: translateY(3px);
+}
+.hidden {
+  visibility: hidden;
+}
+.unhide {
+  visibility: visible;
+}
+.social {
+  position: absolute;
+  top: -85px;
+  right: -110px;
+  width: 248px;
+  height: 67px;
+  border-radius: 8px;
+  background-color: #48556a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #48556a;
+  border-bottom: 10px solid transparent;
+  bottom: -19px;
+}
+.social p {
+  color: #9daec2;
+  letter-spacing: 5px;
+}
+footer {
+  position: absolute;
+  bottom: 1px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 800px) {
+  body {
+    height: auto;
+  }
+  main {
+    flex-direction: column;
+    width: 327px;
+    height: auto;
+    margin: 30px auto;
+    gap: 10px;
+  }
+  .drawers {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+  .info {
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .share-logo {
+  }
+  .author-name {
+  }
+  .logo {
+  }
+  .social {
+    position: absolute;
+    top: -24px;
+    right: -50px;
+    width: 327px;
+    height: 64px;
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .social:after {
+    border: none;
+  }
+}
